@@ -13,7 +13,8 @@ const goToPageAndGetData = async (pageLink) => {
         const username = document.location.href.split('/').pop();
 
         const stats = [...document.querySelectorAll('.stat-container .stat-box .stat')];
-        const numKataCompleted = stats.find(stat => stat.innerText.includes('Total Completed Kata')).innerText;
+        const kataCompletedText = stats.find(stat => stat.innerText.includes('Total Completed Kata')).innerText;
+        const numKataCompleted = kataCompletedText.split(':').pop();
 
         return {username, numKataCompleted};
       })
@@ -26,15 +27,6 @@ const goToPageAndGetData = async (pageLink) => {
 };
 
 console.log(`Scraping katas...`);
-
-// const data = studentKataURLs.reduce(async (acc, pageLink, idx) => {
-//   const dataArray = await acc;
-//   const {username, numKataCompleted} = await goToPageAndGetData(pageLink);
-
-//   console.log(`${username}: ${numKataCompleted}`);
-//   dataArray.push(numKataCompleted);
-//   return dataArray;
-// }, Promise.resolve([]));
 
 studentKataURLs.forEach(async (pageLink) => {
   const {username, numKataCompleted} = await goToPageAndGetData(pageLink);
