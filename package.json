@@ -1,0 +1,14 @@
+{
+  "name": "codewars-scraper",
+  "version": "1.0.0",
+  "description": "Gather katas completed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Turing School of Software and Design",
+  "license": "MIT",
+  "dependencies": {
+    "nightmare": "^3.0.1"
+  }
+}
