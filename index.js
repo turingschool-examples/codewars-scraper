@@ -36,8 +36,8 @@ const runScraper = async () => {
   }  
 }
 
-console.log(`Scraping katas...`);
+console.log('Scraping katas...\n');
 
 runScraper()
-  .then(() => console.log('Finished.'))
+  .then(() => console.log('\nFinished.'))
   .catch(err => console.error(err));
