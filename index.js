@@ -27,12 +27,18 @@ const goToPageAndGetData = async (pageLink) => {
 
 console.log(`Scraping katas...`);
 
-const data = studentKataURLs.reduce(async (acc, pageLink, idx) => {
-  const dataArray = await acc;
+// const data = studentKataURLs.reduce(async (acc, pageLink, idx) => {
+//   const dataArray = await acc;
+//   const {username, numKataCompleted} = await goToPageAndGetData(pageLink);
+
+//   console.log(`${username}: ${numKataCompleted}`);
+//   dataArray.push(numKataCompleted);
+//   return dataArray;
+// }, Promise.resolve([]));
+
+studentKataURLs.forEach(async (pageLink) => {
   const {username, numKataCompleted} = await goToPageAndGetData(pageLink);
 
   console.log(`${username}: ${numKataCompleted}`);
-  dataArray.push(numKataCompleted);
-  return dataArray;
-}, Promise.resolve([]));
+});
 
