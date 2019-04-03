@@ -28,9 +28,14 @@ const goToPageAndGetData = async (pageLink) => {
 
 console.log(`Scraping katas...`);
 
-studentKataURLs.forEach(async (pageLink) => {
-  const {username, numKataCompleted} = await goToPageAndGetData(pageLink);
+const runScraper = async () => {
+  for (const pageLink of studentKataURLs) {
+    const {username, numKataCompleted} = await goToPageAndGetData(pageLink);
 
-  console.log(`${username}: ${numKataCompleted}`);
-});
+    console.log(`${username}: ${numKataCompleted}`);
+  }  
+}
 
+runScraper()
+  .then(() => console.log('Finished.'))
+  .catch(err => console.error(err));
