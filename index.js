@@ -26,8 +26,8 @@ const goToPageAndGetData = async (pageLink) => {
   }
 };
 
-console.log(`Scraping katas...`);
-
+// This runs synchronously, which is slower, but gives results 
+// back in the same order as the list of students going in
 const runScraper = async () => {
   for (const pageLink of studentKataURLs) {
     const {username, numKataCompleted} = await goToPageAndGetData(pageLink);
@@ -35,6 +35,8 @@ const runScraper = async () => {
     console.log(`${username}: ${numKataCompleted}`);
   }  
 }
+
+console.log(`Scraping katas...`);
 
 runScraper()
   .then(() => console.log('Finished.'))
