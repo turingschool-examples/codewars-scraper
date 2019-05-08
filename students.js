@@ -2,7 +2,7 @@
 // the output will be in the order of the array
 
 module.exports = [
-  'https://www.codewars.com/users/Araprojects',
+  'https://www.codewars.com/users/ArAprojects',
   'https://www.codewars.com/users/andreeahanson',
   'https://www.codewars.com/users/CervAnn',
   'https://www.codewars.com/users/annekemcgrady',
