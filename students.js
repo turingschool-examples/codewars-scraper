@@ -2,8 +2,36 @@
 // the output will be in the order of the array
 
 module.exports = [
+  'https://www.codewars.com/users/Asi5',
+  'https://www.codewars.com/users/aripp2',
+  'https://www.codewars.com/users/ayladharamsey',
+  'https://www.codewars.com/users/julianenochs',
+  'https://www.codewars.com/users/dawnlunacy',
   'https://www.codewars.com/users/ericwm76',
   'https://www.codewars.com/users/KVeitch',
   'https://www.codewars.com/users/posi7790',
-  'https://www.codewars.com/users/qfarenwald'
+  'https://www.codewars.com/users/qfarenwald',
+  'https://www.codewars.com/users/vrandall66',
+  'https://www.codewars.com/users/allisonjw',
+  'https://www.codewars.com/users/ec-myers',
+  'https://www.codewars.com/users/VPAbraham',
+  'https://www.codewars.com/users/RaHughes',
+  'https://www.codewars.com/users/SamuelColeman',
+  'https://www.codewars.com/users/ZoeKHarvey',
+  'https://www.codewars.com/users/Garrett-Iannuzzi',
+  'https://www.codewars.com/users/chrisdbasham317',
+  'https://www.codewars.com/users/ckoga',
+  'https://www.codewars.com/users/jmevans0211',
+  'https://www.codewars.com/users/N-Gibson',
+  'https://www.codewars.com/users/mschneider247',
+  'https://www.codewars.com/users/peerat',
+  'https://www.codewars.com/users/slkarsh',
+  'https://www.codewars.com/users/sschipke',
+  'https://www.codewars.com/users/foster55f',
+  'https://www.codewars.com/users/JEduardoRJx',
+  'https://www.codewars.com/users/edwindelbosque',
+  'https://www.codewars.com/users/katemalone',
+  'https://www.codewars.com/users/ohnomalone',
+  'https://www.codewars.com/users/naomikc92',
+  'https://www.codewars.com/users/bradyb'
 ];
