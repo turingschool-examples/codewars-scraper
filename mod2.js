@@ -1,6 +1,6 @@
 const Nightmare = require('nightmare');
 
-const studentKataURLs = require('./students.js');
+const studentKataURLs = require('./m2-students.js');
 
 const goToPageAndGetData = async (pageLink) => {
   try {
