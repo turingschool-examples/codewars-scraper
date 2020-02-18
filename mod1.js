@@ -1,6 +1,6 @@
 const Nightmare = require('nightmare');
 
-const studentKataURLs = require('./students.js');
+const studentKataURLs = require('./m1-students.js');
 
 const goToPageAndGetData = async (pageLink) => {
   try {
@@ -26,14 +26,14 @@ const goToPageAndGetData = async (pageLink) => {
   }
 };
 
-// This runs synchronously, which is slower, but gives results 
+// This runs synchronously, which is slower, but gives results
 // back in the same order as the list of students going in
 const runScraper = async () => {
   for (const pageLink of studentKataURLs) {
     const {username, numKataCompleted} = await goToPageAndGetData(pageLink);
 
     console.log(`${username}: ${numKataCompleted}`);
-  }  
+  }
 }
 
 console.log('Scraping katas...\n');
